@@ -15,7 +15,7 @@ const WeightConverter: React.FC = () => {
 
   return (
     <div className="flex flex-col items-center mt-8">
-      <h1 className="text-3xl font-bold mb-4">{t("Weight Converter")}</h1>
+      <h1 className="font-bold m-20">{t("Weight Converter")}</h1>
       <Converter conversionRates={weightUnits} />
     </div>
   );

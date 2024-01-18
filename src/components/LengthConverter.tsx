@@ -17,7 +17,7 @@ export const LengthConverter: React.FC = () => {
 
   return (
     <div className="flex flex-col items-center mt-8">
-      <h1 className="text-3xl font-bold mb-4">{t("Length Converter")}</h1>
+      <h1 className="font-bold m-20">{t("Length Converter")}</h1>
       <Converter conversionRates={lengthUnits} />
     </div>
   );

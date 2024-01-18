@@ -24,7 +24,7 @@ const Converter: React.FC<ConverterProps> = ({ conversionRates }) => {
       }
     };
 
-    updateInputValues(Object.keys(conversionRates)[0], "0"); // Initialize with a default unit and value
+    updateInputValues(Object.keys(conversionRates)[0], "");
   }, [conversionRates]);
 
   const handleInputChange = (
@@ -44,21 +44,24 @@ const Converter: React.FC<ConverterProps> = ({ conversionRates }) => {
     if (!isNaN(inputValueFloat)) {
       const updatedValues = {} as Record<string, string>;
       Object.keys(conversionRates).forEach((unit) => {
-        updatedValues[unit] = (
-          (inputValueFloat / conversionRates[changedUnit]) *
-          conversionRates[unit]
-        ).toFixed(2);
+        if (unit !== changedUnit) {
+          updatedValues[unit] = (
+            (inputValueFloat / conversionRates[changedUnit]) *
+            conversionRates[unit]
+          ).toFixed(8);
+        } else {
+          updatedValues[unit] = changedValue;
+        }
       });
       setInputValues(updatedValues);
     }
   };
 
   return (
-    <div className="flex flex-wrap justify-center mb-4">
+    <div className="flex flex-wrap flex-center mb-4 justify-center">
       {Object.keys(conversionRates).map((unit) => (
         <div key={unit} className="flex flex-col items-center mr-4 mb-4">
           <input
-            type="number"
             value={inputValues[unit] || ""}
             onChange={(e) => handleInputChange(e, unit)}
             className="border p-2 mb-2 text-blue-600"
