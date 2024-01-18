@@ -1,0 +1,23 @@
+{
+  "Length Converter": "Convertisseur de longueur",
+  "Weight Converter": "Convertisseur de poids",
+  "Currency Converter": "Convertisseur de devises",
+  "enterUnit": "Entrer {{ unit }}",
+  "meters": "Mètres",
+  "kilometers": "Kilomètres",
+  "centimeters": "Centimètres",
+  "millimeters": "Millimètres",
+  "inches": "Pouces",
+  "feet": "Pieds",
+  "yards": "Yards",
+  "kilograms": "Kilogrammes",
+  "grams": "Grammes",
+  "milligrams": "Milligrammes",
+  "pounds": "Livres",
+  "ounces": "Onces",
+  "USD": "Dollar américain",
+  "EUR": "Euro",
+  "JPY": "Yen japonais",
+  "GBP": "Livre britannique",
+  "CNY": "Yuan chinois"
+}

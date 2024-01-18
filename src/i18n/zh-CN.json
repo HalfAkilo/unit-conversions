@@ -1,0 +1,23 @@
+{
+  "Length Converter": "长度转换器",
+  "Weight Converter": "重量转换器",
+  "Currency Converter": "货币转换器",
+  "enterUnit": "输入{{ unit }}",
+  "meters": "米",
+  "kilometers": "千米",
+  "centimeters": "厘米",
+  "millimeters": "毫米",
+  "inches": "英寸",
+  "feet": "英尺",
+  "yards": "码",
+  "kilograms": "千克",
+  "grams": "克",
+  "milligrams": "毫克",
+  "pounds": "磅",
+  "ounces": "盎司",
+  "USD": "美元",
+  "EUR": "欧元",
+  "JPY": "日元",
+  "GBP": "英镑",
+  "CNY": "人民币"
+}
